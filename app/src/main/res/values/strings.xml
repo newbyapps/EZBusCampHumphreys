@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Camp Humphreys EZ Bus</string>
+    <string name="app_name">EZ Bus</string>
     <string name="action_settings">Settings</string>
     <string name="pick_bus">Select Bus</string>
     <string name="red">Red</string>
