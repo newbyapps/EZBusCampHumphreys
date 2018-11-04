@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup rGroup, rGroup2;
     private RadioButton redButton, blueButton, weekDay, weekEnd, greenButton;
     private ArrayAdapter<String> adapter, adapter2, adapter3;
-    private int test;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         listView = (ListView) findViewById(R.id.locationListView);
 
         // Buttons
